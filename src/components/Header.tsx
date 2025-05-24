@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { PlusIcon } from "lucide-react";
+import { SendIcon } from "lucide-react";
 
 export default function Header() {
   const pathname = usePathname();
@@ -13,7 +13,7 @@ export default function Header() {
         {/* Left section - Logo */}
         <div className="navbar-start">
           <Link href="/" className="btn btn-ghost text-xl">
-            docstream
+            Dima Bondar
           </Link>
         </div>
         {/* Middle section - Navigation */}
@@ -30,32 +30,32 @@ export default function Header() {
               About
             </Link>
             <Link
-              href="/features"
+              href="/projects"
               role="tab"
               className={
-                pathname === "/features"
+                pathname === "/projects"
                   ? "tab tab-active text-base"
                   : "tab text-base"
               }>
-              Features
+              Projects
             </Link>
             <Link
-              href="/pricing"
+              href="/resume"
               role="tab"
               className={
-                pathname === "/pricing"
+                pathname === "/resume"
                   ? "tab tab-active text-base"
                   : "tab text-base"
               }>
-              Pricing
+              Resume
             </Link>
           </div>
         </div>
         {/* Right section - New Chat Button */}
         <div className="navbar-end">
           <Link href="/chat" className="btn btn-primary btn-soft">
-            <PlusIcon size={18} />
-            New Chat
+            <SendIcon size={18} />
+            Contact
           </Link>
         </div>
       </nav>

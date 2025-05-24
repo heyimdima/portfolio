@@ -1,11 +1,7 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-
 export default function LandingPage() {
   return (
     <div className="flex flex-col">
-      <Header />
-      <Footer />
+      <h1 className="text-center">Landing Page</h1>
     </div>
   );
 }
